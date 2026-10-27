@@ -7,7 +7,17 @@ import { Trophy, ShieldCheck, ChevronDown } from "lucide-react";
 import { athletics } from "./data";
 import { Reveal, SectionHeading } from "./motion";
 
-function AutoVideo() {
+function AutoVideo({
+  src,
+  poster,
+  label,
+  alt,
+}: {
+  src: string;
+  poster: string;
+  label: string;
+  alt: string;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -41,19 +51,19 @@ function AutoVideo() {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="relative overflow-hidden rounded-3xl border border-white/10"
+      className="relative h-full overflow-hidden rounded-3xl border border-white/10"
     >
       <video
         ref={videoRef}
-        className="aspect-video w-full object-cover"
-        src="/media/videos/golf-swing.mp4"
-        poster="/media/videos/golf-swing-poster.jpg"
+        className="aspect-video h-full w-full object-cover"
+        src={src}
+        poster={poster}
         autoPlay
         muted
         loop
         playsInline
         preload="metadata"
-        aria-label="Fabrizio Saunero hitting a full golf swing at Club de Golf La Paz"
+        aria-label={alt}
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
       <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full border border-white/15 bg-ink/70 px-4 py-2 backdrop-blur-md">
@@ -62,7 +72,7 @@ function AutoVideo() {
           <span className="relative inline-flex h-2 w-2 rounded-full bg-volt" />
         </span>
         <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-paper">
-          Golf at 3,600 m — full swing
+          {label}
         </span>
       </div>
     </motion.div>
@@ -83,7 +93,20 @@ export function Athletics() {
         {/* Top media row */}
         <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1.25fr_1fr]">
           {/* Featured video */}
-          <AutoVideo />
+          <div className="grid gap-6 lg:grid-rows-2">
+            <AutoVideo
+              src="/media/videos/golf-swing.mp4"
+              poster="/media/videos/golf-swing-poster.jpg"
+              label="Golf at 3,600 m — full swing"
+              alt="Fabrizio Saunero hitting a full golf swing at Club de Golf La Paz"
+            />
+            <AutoVideo
+              src="/media/videos/golf-coaching.mp4"
+              poster="/media/videos/golf-coaching-poster.jpg"
+              label="Golf — lesson with my coach"
+              alt="Fabrizio Saunero talking with his golf coach on the range at Club de Golf La Paz"
+            />
+          </div>
 
           {/* Night team photo + basketball */}
           <div className="grid gap-6">
