@@ -50,16 +50,16 @@ export function Gallery() {
           headline="Moments that tell the story."
         />
 
-        <div className="mt-14 columns-2 gap-4 space-y-4 md:mt-20 md:columns-3 md:gap-6 md:space-y-6">
+        <div className="mt-14 grid grid-cols-2 gap-4 md:mt-20 md:grid-cols-3 md:gap-6">
           {galleryImages.map((img, i) => (
-            <Reveal key={img.src} delay={Math.min(i * 0.04, 0.3)} className="break-inside-avoid">
+            <Reveal key={img.src} delay={Math.min(i * 0.04, 0.3)} className="h-full">
               <button
                 type="button"
                 onClick={() => setLightbox(i)}
                 aria-label={`Open photo: ${img.caption}`}
                 className="group relative block w-full overflow-hidden rounded-2xl border border-white/10 text-left focus:outline-none focus:ring-2 focus:ring-volt"
               >
-                <div className={`relative ${img.tall ? "aspect-[3/4]" : "aspect-[4/3]"}`}>
+                <div className="relative aspect-[4/5]">
                   <Image
                     src={img.src}
                     alt={img.alt}
