@@ -57,7 +57,7 @@ export function Nav() {
         {/* Logo */}
         <a
           href="#top"
-          className="group flex items-center gap-3"
+          className="group -mx-1.5 -my-2.5 flex items-center gap-3 px-1.5 py-2.5"
           aria-label="Fabrizio Saunero — back to top"
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-volt font-display text-sm text-ink transition-transform duration-300 group-hover:rotate-12">
@@ -127,7 +127,23 @@ export function Nav() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setOpen(false);
+                      const id = link.href.slice(1);
+                      // Delay the scroll until the menu's exit animation finishes:
+                      // framer-motion's keyframe measurement momentarily resets
+                      // scroll to 0, which cancels any scroll started too early.
+                      window.setTimeout(() => {
+                        const reduce = window.matchMedia(
+                          "(prefers-reduced-motion: reduce)"
+                        ).matches;
+                        document
+                          .getElementById(id)
+                          ?.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+                        history.pushState(null, "", `#${id}`);
+                      }, 360);
+                    }}
                     className="flex items-center justify-between rounded-lg px-3 py-3 text-base font-medium uppercase tracking-wider text-paper transition-colors hover:bg-white/5 hover:text-volt"
                   >
                     {link.label}
@@ -138,7 +154,19 @@ export function Nav() {
               <li>
                 <a
                   href="#contact"
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                    window.setTimeout(() => {
+                      const reduce = window.matchMedia(
+                        "(prefers-reduced-motion: reduce)"
+                      ).matches;
+                      document
+                        .getElementById("contact")
+                        ?.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+                      history.pushState(null, "", "#contact");
+                    }, 360);
+                  }}
                   className="mt-2 flex items-center justify-center gap-2 rounded-full bg-volt px-5 py-3.5 text-sm font-semibold uppercase tracking-wider text-ink"
                 >
                   Get in touch

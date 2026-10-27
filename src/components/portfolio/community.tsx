@@ -117,7 +117,7 @@ export function Community() {
                       className="flex flex-col justify-between gap-1 py-3.5 sm:flex-row sm:items-center sm:gap-4"
                     >
                       <span className="font-medium text-paper">{c.name}</span>
-                      <span className="whitespace-nowrap text-xs uppercase tracking-[0.14em] text-paper-dim">
+                      <span className="sm:whitespace-nowrap text-xs uppercase tracking-[0.14em] text-paper-dim">
                         {c.role}
                       </span>
                     </li>

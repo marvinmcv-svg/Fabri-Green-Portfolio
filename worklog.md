@@ -35,3 +35,24 @@ Stage Summary:
 - Deliverable: complete single-page portfolio at `/` (Next.js 16 + TypeScript + Tailwind 4 + Framer Motion), media served from `public/media/`.
 - All 25 Google Drive assets curated and embedded; best images on landing (trophy hero) and section headers; 5 best videos in the highlights reel.
 - Site verified end-to-end in headless browser on desktop + mobile viewports with zero errors.
+
+---
+Task ID: 2
+Agent: Z.ai (main agent)
+Task: End-to-end Playwright screen test — structure, CSS override/stacking audit, and mobile optimization verification for the Fabrizio Saunero portfolio.
+
+Work Log:
+- Wrote comprehensive Playwright (Python, Chromium 1.57) E2E suite: `scripts/e2e_portfolio_test.py` (149 checks) + `scripts/run_e2e.sh` runner (sandbox kills bg processes between calls, so server+tests run in one session).
+- Coverage: (1) structure — sections/order/headings/meta/fonts/images/videos attrs, lazy-load sweep; (2) overrides & stacking — z-index layers (nav z-50 < lightbox z-100), click-interception sweeps at 3 scroll positions, anchor alignment vs fixed nav, body scroll-lock; (3) interactions — nav links/hash/active state, autoplay video, player play/pause/mute/playlist, lightbox open/next/prev/keyboard/close, counters, marquee, reduced-motion; (4) mobile matrix — iPhone 14 (390), small Android (360), iPhone SE (320), iPad (768), landscape (844x390) with touch+mobile emulation: overflow, layout-viewport fit, hamburger, tap targets >=40px, fonts >=11px, media fit, touch lightbox/player; (5) console + network errors.
+- Debugging (bisect via SSR-HTML section stripping, CSS rewrites, scroll instrumentation): root-caused 3 real bugs:
+  1. Highlights player: full-size paused-overlay button covered bottom controls (mute/pause unclickable while paused) → added z-10 to controls bar (highlights.tsx).
+  2. CRITICAL mobile: playlist grid items (Reveal wrappers, min-width:auto) + truncate captions => 559px min-content; Chrome mobile shrink-to-fit expanded layout viewport to 559 => fixed header 559px wide, hamburger pushed off-screen on all phones → added className="min-w-0" to Reveal grid items (highlights.tsx). Same class of bug in community.tsx: commitments' whitespace-nowrap roles seeded 374px overflow at <=360px → changed to sm:whitespace-nowrap.
+  3. Mobile menu links: framer-motion's measureAllKeyframes calls window.scrollTo(0,0) during menu exit animation, cancelling the hash-nav scroll (scrollY stuck at 0) → menu links now preventDefault + delayed (360ms) explicit scrollIntoView + pushState, reduced-motion aware (nav.tsx).
+- Polish: logo tap area enlarged to ~48x52px via -mx/-my + padding (nav.tsx); hero badge labels 10px -> 11px (hero.tsx).
+- Also found+worked around: dev server Turbopack watcher died mid-session (stale code served) => restart with fresh cache; documented single-session runner script.
+- Final run: 149/149 PASS (100%) across desktop 1920x1080 + 5 mobile/touch viewports; eslint 0 errors/0 warnings; zero console errors, zero failed requests; VLM visual verification of iPhone SE hero + iPhone 14 highlights screenshots clean.
+
+Stage Summary:
+- E2E suite + runner persisted in scripts/ (e2e_portfolio_test.py, run_e2e.sh); evidence screenshots + results.json in scripts/e2e-shots/.
+- 4 real bugs fixed (player overlay z-index, 559px highlights grid blowout, 374px community nowrap overflow, framer scrollTo(0,0) menu nav race) + 2 a11y/UX polish items.
+- Site now verified: structure clean, no stacking overrides/click interception, fully mobile-optimized from 320px to desktop, zero console/network errors.

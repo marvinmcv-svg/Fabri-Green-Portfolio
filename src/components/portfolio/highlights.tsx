@@ -67,7 +67,7 @@ export function Highlights() {
 
         <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1.5fr_1fr]">
           {/* Player */}
-          <Reveal>
+          <Reveal className="min-w-0">
             <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-ink-2">
               <video
                 ref={videoRef}
@@ -85,7 +85,7 @@ export function Highlights() {
 
               {/* Controls overlay */}
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent opacity-90" />
-              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between gap-4 p-4 md:p-5">
+              <div className="absolute bottom-0 left-0 right-0 z-10 flex items-center justify-between gap-4 p-4 md:p-5">
                 <div className="min-w-0">
                   <AnimatePresence mode="wait">
                     <motion.p
@@ -150,7 +150,7 @@ export function Highlights() {
             </Reveal>
             <div className="grid flex-1 gap-3 sm:grid-cols-2 lg:grid-cols-1 lg:content-start">
               {videos.map((video, i) => (
-                <Reveal key={video.src} delay={0.08 + i * 0.06}>
+                <Reveal key={video.src} delay={0.08 + i * 0.06} className="min-w-0">
                   <button
                     type="button"
                     onClick={() => select(i)}

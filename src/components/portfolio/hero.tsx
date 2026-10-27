@@ -167,7 +167,7 @@ export function Hero() {
               className="absolute -right-3 top-8 rounded-2xl border border-volt/40 bg-ink-2/90 px-4 py-3 shadow-2xl shadow-black/50 backdrop-blur-md md:-right-8"
             >
               <p className="font-display text-xl text-volt md:text-2xl">2×</p>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-paper-dim">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-paper-dim">
                 U17 State Champion
               </p>
             </motion.div>
@@ -180,7 +180,7 @@ export function Hero() {
               <p className="font-display text-sm uppercase tracking-wider text-paper">
                 Varsity Captain
               </p>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-paper-dim">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-paper-dim">
                 ACS Cougars · Since 2023
               </p>
             </motion.div>

@@ -1,0 +1,902 @@
+{
+  "total": 149,
+  "passed": 149,
+  "results": [
+    {
+      "cat": "structure",
+      "name": "HTTP 200 + title",
+      "ok": true,
+      "detail": "Fabrizio Saunero \u2014 Built by Experience. Driven by Purpose."
+    },
+    {
+      "cat": "structure",
+      "name": "viewport meta responsive",
+      "ok": true,
+      "detail": "width=device-width, initial-scale=1"
+    },
+    {
+      "cat": "structure",
+      "name": "html lang=en",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "all 9 anchor sections present",
+      "ok": true,
+      "detail": "found=['top', 'about', 'athletics', 'community', 'work', 'independence', 'highlights', 'gallery', 'contact']"
+    },
+    {
+      "cat": "structure",
+      "name": "section order correct",
+      "ok": true,
+      "detail": "order=['top', 'about', 'athletics', 'community', 'work', 'independence', 'highlights', 'gallery', 'contact']"
+    },
+    {
+      "cat": "structure",
+      "name": "footer present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "nav[aria-label=Primary] present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "exactly one <h1>",
+      "ok": true,
+      "detail": "h1_count=1"
+    },
+    {
+      "cat": "structure",
+      "name": "has <h2> sections",
+      "ok": true,
+      "detail": "h2=8"
+    },
+    {
+      "cat": "structure",
+      "name": "no skipped heading levels",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "single <main> landmark",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "all 29 images load after lazy sweep",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "a11y",
+      "name": "all images have alt text",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "structure",
+      "name": "all 2 videos have poster",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "structure",
+      "name": "all videos playsInline (iOS autoplay-safe)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "all videos muted+loop (autoplay-safe)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "display font Anton loaded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "body font Inter loaded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "single <main> landmark",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "no horizontal overflow (desktop)",
+      "ok": true,
+      "detail": "sw=1920 cw=1920 offenders=[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "nav fixed with z-50",
+      "ok": true,
+      "detail": "{'navZ': '50', 'lbZ': None}"
+    },
+    {
+      "cat": "stacking",
+      "name": "nav clickable (not covered by hero)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "stacking",
+      "name": "no click interception on interactive els (viewport 1)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "no click interception (40% scroll)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "no click interception (bottom)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "anchors align to section tops (nothing clipped under nav)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "section headings visible below fixed nav",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "stacking",
+      "name": "lightbox z-index (100) above nav (50)",
+      "ok": true,
+      "detail": "lightbox z=100"
+    },
+    {
+      "cat": "stacking",
+      "name": "lightbox paints above nav",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "lightbox Escape closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "stacking",
+      "name": "body scroll locked while lightbox open",
+      "ok": true,
+      "detail": "overflow=hidden"
+    },
+    {
+      "cat": "stacking",
+      "name": "body scroll restored after close",
+      "ok": true,
+      "detail": "overflow=hidden auto"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Athletics' scrolls page",
+      "ok": true,
+      "detail": "scrollY=1851"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Athletics' updates hash",
+      "ok": true,
+      "detail": "#athletics"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Highlights' scrolls page",
+      "ok": true,
+      "detail": "scrollY=10995"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Highlights' updates hash",
+      "ok": true,
+      "detail": "#highlights"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Gallery' scrolls page",
+      "ok": true,
+      "detail": "scrollY=12001"
+    },
+    {
+      "cat": "interact",
+      "name": "nav 'Gallery' updates hash",
+      "ok": true,
+      "detail": "#gallery"
+    },
+    {
+      "cat": "interact",
+      "name": "nav active state highlights current section",
+      "ok": true,
+      "detail": "underline_width=70px (want >5)"
+    },
+    {
+      "cat": "interact",
+      "name": "athletics video autoplays on scroll into view",
+      "ok": true,
+      "detail": "[{'paused': False, 't': '1.59'}]"
+    },
+    {
+      "cat": "stacking",
+      "name": "player controls clickable while paused (overlay fix)",
+      "ok": true,
+      "detail": "hit_test=True"
+    },
+    {
+      "cat": "interact",
+      "name": "highlights player: play button starts video",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "playlist has 5 clips",
+      "ok": true,
+      "detail": "found=5"
+    },
+    {
+      "cat": "interact",
+      "name": "playlist switching swaps video source",
+      "ok": true,
+      "detail": "golf-swing.mp4 -> golf-putting.mp4"
+    },
+    {
+      "cat": "interact",
+      "name": "new clip auto-plays after switch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "pause button pauses video",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "mute toggle works",
+      "ok": true,
+      "detail": "before=True after=False"
+    },
+    {
+      "cat": "interact",
+      "name": "gallery grid has photos (n=12)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "lightbox opens with counter 01",
+      "ok": true,
+      "detail": "01 / 12"
+    },
+    {
+      "cat": "interact",
+      "name": "next button advances to 02",
+      "ok": true,
+      "detail": "02 / 12"
+    },
+    {
+      "cat": "interact",
+      "name": "ArrowRight advances to 03",
+      "ok": true,
+      "detail": "03 / 12"
+    },
+    {
+      "cat": "interact",
+      "name": "ArrowLeft goes back to 02",
+      "ok": true,
+      "detail": "02 / 12"
+    },
+    {
+      "cat": "interact",
+      "name": "close button closes lightbox",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "interact",
+      "name": "hero counters animate to final values (25/5\u00d7/$7,000/6)",
+      "ok": true,
+      "detail": "got=['01', '25', '5\u00d7', '$7,000', '6']"
+    },
+    {
+      "cat": "interact",
+      "name": "marquee ticker animating",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "structure",
+      "name": "smooth scrolling enabled",
+      "ok": true,
+      "detail": "smooth"
+    },
+    {
+      "cat": "a11y",
+      "name": "prefers-reduced-motion media rule exists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": "sw=390 cw=390 offenders=[]"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "layout viewport == device width (no zoom-out fit)",
+      "ok": true,
+      "detail": "innerWidth=390 expected=390"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "hamburger menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "desktop nav links hidden",
+      "ok": true,
+      "detail": "display=False"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "tap targets >= 40px (above fold)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "no text below 11px",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "all media fits viewport width",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "hamburger opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "menu shows section links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "menu links are finger-friendly",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "menu link scrolls to athletics",
+      "ok": true,
+      "detail": "scrollY=3258"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "menu auto-closes after link tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "no overflow during full scroll sweep",
+      "ok": true,
+      "detail": "None"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "lightbox opens on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "lightbox image fits mobile screen",
+      "ok": true,
+      "detail": "{'w': 358, 'h': 608, 'vw': 390, 'vh': 844, 'okW': True, 'okH': True}"
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "lightbox closes on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "highlights video fits width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-14",
+      "name": "video play button works on touch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": "sw=360 cw=360 offenders=[]"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "layout viewport == device width (no zoom-out fit)",
+      "ok": true,
+      "detail": "innerWidth=360 expected=360"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "hamburger menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "desktop nav links hidden",
+      "ok": true,
+      "detail": "display=False"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "tap targets >= 40px (above fold)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "no text below 11px",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "all media fits viewport width",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "hamburger opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "menu shows section links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "menu links are finger-friendly",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "menu link scrolls to athletics",
+      "ok": true,
+      "detail": "scrollY=3268"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "menu auto-closes after link tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "no overflow during full scroll sweep",
+      "ok": true,
+      "detail": "None"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "lightbox opens on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "lightbox image fits mobile screen",
+      "ok": true,
+      "detail": "{'w': 328, 'h': 576, 'vw': 360, 'vh': 800, 'okW': True, 'okH': True}"
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "lightbox closes on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "highlights video fits width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:small-android",
+      "name": "video play button works on touch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": "sw=320 cw=320 offenders=[]"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "layout viewport == device width (no zoom-out fit)",
+      "ok": true,
+      "detail": "innerWidth=320 expected=320"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "hamburger menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "desktop nav links hidden",
+      "ok": true,
+      "detail": "display=False"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "tap targets >= 40px (above fold)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "no text below 11px",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "all media fits viewport width",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "hamburger opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "menu shows section links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "menu links are finger-friendly",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "menu link scrolls to athletics",
+      "ok": true,
+      "detail": "scrollY=3328"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "menu auto-closes after link tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "no overflow during full scroll sweep",
+      "ok": true,
+      "detail": "None"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "lightbox opens on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "lightbox image fits mobile screen",
+      "ok": true,
+      "detail": "{'w': 288, 'h': 409, 'vw': 320, 'vh': 568, 'okW': True, 'okH': True}"
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "lightbox closes on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "highlights video fits width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:iphone-se",
+      "name": "video play button works on touch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": "sw=768 cw=768 offenders=[]"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "layout viewport == device width (no zoom-out fit)",
+      "ok": true,
+      "detail": "innerWidth=768 expected=768"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "hamburger menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "desktop nav links hidden",
+      "ok": true,
+      "detail": "display=False"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "tap targets >= 40px (above fold)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "no text below 11px",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "all media fits viewport width",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "hamburger opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "menu shows section links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "menu links are finger-friendly",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "menu link scrolls to athletics",
+      "ok": true,
+      "detail": "scrollY=2719"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "menu auto-closes after link tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "no overflow during full scroll sweep",
+      "ok": true,
+      "detail": "None"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "lightbox opens on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "lightbox image fits mobile screen",
+      "ok": true,
+      "detail": "{'w': 688, 'h': 778, 'vw': 768, 'vh': 1024, 'okW': True, 'okH': True}"
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "lightbox closes on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "highlights video fits width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:ipad",
+      "name": "video play button works on touch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": "sw=844 cw=844 offenders=[]"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "layout viewport == device width (no zoom-out fit)",
+      "ok": true,
+      "detail": "innerWidth=844 expected=844"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "hamburger menu visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "desktop nav links hidden",
+      "ok": true,
+      "detail": "display=False"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "tap targets >= 40px (above fold)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "no text below 11px",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "all media fits viewport width",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "hamburger opens menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "menu shows section links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "menu links are finger-friendly",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "menu link scrolls to athletics",
+      "ok": true,
+      "detail": "scrollY=2604"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "menu auto-closes after link tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "no overflow during full scroll sweep",
+      "ok": true,
+      "detail": "None"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "lightbox opens on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "lightbox image fits mobile screen",
+      "ok": true,
+      "detail": "{'w': 764, 'h': 274, 'vw': 844, 'vh': 390, 'okW': True, 'okH': True}"
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "lightbox closes on tap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "highlights video fits width",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "mobile:landscape",
+      "name": "video play button works on touch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "cat": "console",
+      "name": "zero console errors (all viewports)",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "cat": "network",
+      "name": "zero failed requests (4xx/5xx)",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "console_errors": [],
+  "failed_requests": []
+}
