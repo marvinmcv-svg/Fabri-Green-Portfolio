@@ -56,3 +56,19 @@ Stage Summary:
 - E2E suite + runner persisted in scripts/ (e2e_portfolio_test.py, run_e2e.sh); evidence screenshots + results.json in scripts/e2e-shots/.
 - 4 real bugs fixed (player overlay z-index, 559px highlights grid blowout, 374px community nowrap overflow, framer scrollTo(0,0) menu nav race) + 2 a11y/UX polish items.
 - Site now verified: structure clean, no stacking overrides/click interception, fully mobile-optimized from 320px to desktop, zero console/network errors.
+
+---
+Task ID: 3
+Agent: Z.ai (main agent)
+Task: Push the completed Fabrizio portfolio to GitHub using the user-provided fine-grained PAT.
+
+Work Log:
+- Authenticated token via API: user marvinmcv-svg (fine-grained PAT, no repo-creation permission).
+- Pre-push security audit: scanned all 193 tracked files for secrets/tokens/API keys — clean; .env contains only a local DATABASE_URL path; db/custom.db has 0 rows (default Prisma schema only).
+- Identified target repo: `Fabri-Green-Portfolio` (created by user hours before request, empty, public) over the older `Fabrizio-Saunero-Port` (separate Haiku-built HTML portfolio — left untouched).
+- Hygiene commits before push: added root README.md (project overview, tech stack, structure, QA instructions); untracked .env from the repo (public-repo best practice, no secrets inside).
+- Pushed main (5 commits, 193 files, ~34.4 MiB) to https://github.com/marvinmcv-svg/Fabri-Green-Portfolio.git with token embedded in push URL only (not persisted in .git/config); set origin remote + upstream tracking via fetch.
+
+Stage Summary:
+- Live repo: https://github.com/marvinmcv-svg/Fabri-Green-Portfolio (public, main branch, 5 commits).
+- Verified via API: full tree (193 blobs), all 13 portfolio components in src/components/portfolio/, 10 videos + images in public/media/, E2E scripts + evidence screenshots included.
