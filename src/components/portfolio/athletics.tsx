@@ -18,9 +18,9 @@ export function Athletics() {
         />
 
         {/* Top media row */}
-        <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1.25fr_1fr]">
-          {/* Featured video */}
-          <div className="grid gap-6 lg:grid-rows-2">
+        <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1fr_1.25fr]">
+          {/* Videos (right on desktop) */}
+          <div className="grid gap-6 lg:order-2 lg:grid-rows-2">
             <AutoVideo
               src="https://fabrizio-saunero-2.vercel.app/media/soccer-a.mp4"
               poster="https://fabrizio-saunero-2.vercel.app/media/soccer-a.webp"
@@ -35,8 +35,8 @@ export function Athletics() {
             />
           </div>
 
-          {/* Night team photo + basketball */}
-          <div className="grid gap-6">
+          {/* Night team photo + basketball (left on desktop) */}
+          <div className="grid gap-6 lg:order-1">
             <Reveal delay={0.1} className="group relative overflow-hidden rounded-3xl border border-white/10">
               <div className="relative aspect-[4/3]">
                 <Image
