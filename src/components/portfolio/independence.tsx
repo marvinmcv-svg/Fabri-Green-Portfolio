@@ -141,23 +141,31 @@ export function Independence() {
             <Reveal delay={0.1} className="group relative overflow-hidden rounded-3xl border border-white/10">
               <div className="relative aspect-[3/4]">
                 <Image
-                  src="/media/images/work-dough.jpg"
-                  alt="Fabrizio Saunero learning to roll dough in the family kitchen"
+                  src="/media/images/life-grill.jpg"
+                  alt="Fabrizio Saunero seasoning food on a built-in grill in the kitchen"
                   fill
                   sizes="(max-width: 1024px) 45vw, 22vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+                <p className="absolute bottom-4 left-4 right-4 font-display text-base uppercase text-paper">
+                  Cooking &amp; food safety
+                </p>
               </div>
             </Reveal>
             <Reveal delay={0.16} className="group relative overflow-hidden rounded-3xl border border-white/10">
               <div className="relative aspect-[3/4]">
                 <Image
-                  src="/media/images/golf-portrait-alt.jpg"
-                  alt="Fabrizio Saunero on the golf course holding a club"
+                  src="/media/images/life-carwash.jpg"
+                  alt="Fabrizio Saunero washing the family car in the driveway"
                   fill
                   sizes="(max-width: 1024px) 45vw, 22vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+                <p className="absolute bottom-4 left-4 right-4 font-display text-base uppercase text-paper">
+                  Household maintenance
+                </p>
               </div>
             </Reveal>
             <Reveal delay={0.22} className="col-span-2">
