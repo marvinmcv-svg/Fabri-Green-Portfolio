@@ -17,67 +17,60 @@ export function Athletics() {
           intro={athletics.intro}
         />
 
-        {/* Top media row */}
-        <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1fr_1.25fr]">
-          {/* Videos (right on desktop) */}
-          <div className="grid gap-6 lg:order-2 lg:grid-rows-2">
-            <AutoVideo
-              src="https://fabrizio-saunero-2.vercel.app/media/soccer-a.mp4"
-              poster="https://fabrizio-saunero-2.vercel.app/media/soccer-a.webp"
-              label="Match day · Sub 19"
-              alt="Match footage of Fabrizio defending for Club de Tenis La Paz in a Sub 19 game"
-            />
-            <AutoVideo
-              src="/media/videos/golf-swing.mp4"
-              poster="/media/videos/golf-swing-poster.jpg"
-              label="Golf at 3,600 m — full swing"
-              alt="Fabrizio Saunero hitting a full golf swing at Club de Golf La Paz"
-            />
-          </div>
-
-          {/* Night team photo + basketball (left on desktop) */}
-          <div className="grid gap-6 lg:order-1">
-            <Reveal delay={0.1} className="group relative overflow-hidden rounded-3xl border border-white/10">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/media/images/team-tequilas-night.jpg"
-                  alt="Team Tequilas celebrating a first-place finish at night, Fabrizio holding the championship trophy in the center"
-                  fill
-                  sizes="(max-width: 1024px) 90vw, 40vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <p className="font-display text-lg uppercase text-paper">
-                    Champions again — Team Tequilas
-                  </p>
-                  <p className="text-[11px] uppercase tracking-[0.18em] text-paper-dim">
-                    Captain · 1st place · Club de Tenis La Paz
-                  </p>
-                </div>
+        {/* Top media row: [team photo | match day] over [golf swing | basketball] */}
+        <div className="mt-14 grid gap-6 md:mt-20 lg:grid-cols-[1.25fr_1fr] lg:grid-rows-2">
+          <Reveal delay={0.1} className="group relative h-full overflow-hidden rounded-3xl border border-white/10">
+            <div className="relative aspect-[4/3] h-full w-full lg:aspect-auto">
+              <Image
+                src="/media/images/team-tequilas-night.jpg"
+                alt="Team Tequilas celebrating a first-place finish at night, Fabrizio holding the championship trophy in the center"
+                fill
+                sizes="(max-width: 1024px) 90vw, 40vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <p className="font-display text-lg uppercase text-paper">
+                  Champions again — Team Tequilas
+                </p>
+                <p className="text-[11px] uppercase tracking-[0.18em] text-paper-dim">
+                  Captain · 1st place · Club de Tenis La Paz
+                </p>
               </div>
-            </Reveal>
-            <Reveal delay={0.18} className="group relative overflow-hidden rounded-3xl border border-white/10">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/media/images/basketball-cougars.jpg"
-                  alt="ACS Cougars basketball team posing with a trophy, Fabrizio wearing jersey number 15"
-                  fill
-                  sizes="(max-width: 1024px) 90vw, 40vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <p className="font-display text-lg uppercase text-paper">
-                    Cougars basketball #15
-                  </p>
-                  <p className="text-[11px] uppercase tracking-[0.18em] text-paper-dim">
-                    2× Cougar Cup Champion
-                  </p>
-                </div>
+            </div>
+          </Reveal>
+          <AutoVideo
+            src="https://fabrizio-saunero-2.vercel.app/media/soccer-a.mp4"
+            poster="https://fabrizio-saunero-2.vercel.app/media/soccer-a.webp"
+            label="Match day · Sub 19"
+            alt="Match footage of Fabrizio defending for Club de Tenis La Paz in a Sub 19 game"
+          />
+          <AutoVideo
+            src="/media/videos/golf-swing.mp4"
+            poster="/media/videos/golf-swing-poster.jpg"
+            label="Golf at 3,600 m — full swing"
+            alt="Fabrizio Saunero hitting a full golf swing at Club de Golf La Paz"
+          />
+          <Reveal delay={0.18} className="group relative h-full overflow-hidden rounded-3xl border border-white/10">
+            <div className="relative aspect-[4/3] h-full w-full lg:aspect-auto">
+              <Image
+                src="/media/images/basketball-cougars.jpg"
+                alt="ACS Cougars basketball team posing with a trophy, Fabrizio wearing jersey number 15"
+                fill
+                sizes="(max-width: 1024px) 90vw, 40vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <p className="font-display text-lg uppercase text-paper">
+                  Cougars basketball #15
+                </p>
+                <p className="text-[11px] uppercase tracking-[0.18em] text-paper-dim">
+                  2× Cougar Cup Champion
+                </p>
               </div>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
 
         {/* Narrative blocks */}
