@@ -249,13 +249,6 @@ export const videos = [
     caption: "Routine before the swing — golf at 3,600 m altitude",
     featured: false,
   },
-  {
-    src: "/media/videos/golf-coaching.mp4",
-    poster: "/media/videos/golf-coaching-poster.jpg",
-    title: "Lesson with the Coach",
-    caption: "On the range at Club de Golf La Paz — talking through the swing",
-    featured: false,
-  },
 ] as const;
 
 export const galleryImages = [

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { HeartHandshake, GraduationCap, HandCoins, Users } from "lucide-react";
 import { community } from "./data";
+import { AutoVideo } from "./auto-video";
 import { Reveal, SectionHeading, Counter } from "./motion";
 
 const icons = [GraduationCap, HandCoins, Users];
@@ -148,6 +149,30 @@ export function Community() {
               </div>
             </Reveal>
           </div>
+        </div>
+
+        {/* English classes for golf teachers */}
+        <div className="mt-10 grid items-stretch gap-6 md:mt-14 lg:grid-cols-2 lg:gap-10">
+          <AutoVideo
+            src="/media/videos/golf-coaching.mp4"
+            poster="/media/videos/golf-coaching-poster.jpg"
+            label="English class on the range"
+            alt="Fabrizio Saunero teaching English to his golf coach on the range at Club de Golf La Paz"
+          />
+          <Reveal delay={0.1} className="flex">
+            <div className="flex w-full flex-col justify-center rounded-3xl border border-white/10 bg-ink p-7 md:p-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-volt">
+                Founder · Jul 2025–Present
+              </p>
+              <h3 className="font-display mt-3 text-2xl uppercase text-paper md:text-4xl">
+                English classes for golf teachers
+              </h3>
+              <p className="mt-4 leading-relaxed text-paper-dim">
+                At Club de Golf La Paz, Fabrizio teaches English to the golf
+                teachers. Here he is working with his own coach.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>
