@@ -40,8 +40,8 @@ export function Athletics() {
             </div>
           </Reveal>
           <AutoVideo
-            src="https://fabrizio-saunero-2.vercel.app/media/soccer-a.mp4"
-            poster="https://fabrizio-saunero-2.vercel.app/media/soccer-a.webp"
+            src="/media/videos/soccer-a.mp4"
+            poster="/media/videos/soccer-a-poster.jpg"
             label="Match day · Sub 19"
             alt="Match footage of Fabrizio defending for Club de Tenis La Paz in a Sub 19 game"
           />
