@@ -79,6 +79,28 @@ export function Community() {
                 </div>
               </div>
             </Reveal>
+
+            {/* 5K fundraiser */}
+            <Reveal delay={0.2} className="col-span-2 group relative overflow-hidden rounded-3xl border border-white/10">
+              <div className="relative aspect-[3/2]">
+                <Image
+                  src="/media/images/holi-festival.jpg"
+                  alt="Fabrizio Saunero and a friend covered in colorful powder at the Kilómetros por Sonrisas 5K fundraiser, smiling and giving a thumbs up"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="font-display text-lg uppercase text-paper">
+                    Kilómetros por Sonrisas 5K
+                  </p>
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-paper-dim">
+                    Fundraising for Operation Smile · one smile at a time
+                  </p>
+                </div>
+              </div>
+            </Reveal>
           </div>
 
           {/* Right: narrative */}
