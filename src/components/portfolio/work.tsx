@@ -71,13 +71,21 @@ export function Work() {
             </div>
           </Reveal>
           <Reveal delay={0.2} className="group relative col-span-2 overflow-hidden rounded-3xl border border-white/10 md:col-span-2">
-            <div className="relative aspect-[16/9] md:aspect-[2.2/1]">
+            <div className="relative aspect-[4/3] md:aspect-[4/3]">
+              <Image
+                src="/media/images/work-pizza.jpg"
+                alt=""
+                aria-hidden="true"
+                fill
+                sizes="10vw"
+                className="scale-110 object-cover opacity-60 blur-2xl"
+              />
               <Image
                 src="/media/images/work-pizza.jpg"
                 alt="Fabrizio Saunero preparing pizzas in a commercial kitchen"
                 fill
                 sizes="(max-width: 768px) 90vw, 45vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">

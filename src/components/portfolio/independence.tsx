@@ -110,14 +110,22 @@ export function Independence() {
 
           {/* Right: photo stack */}
           <div className="grid grid-cols-2 gap-4 md:gap-6">
-            <Reveal className="group relative col-span-2 overflow-hidden rounded-3xl border border-white/10">
-              <div className="relative aspect-[16/10]">
+            <Reveal className="group relative col-span-2 flex overflow-hidden rounded-3xl border border-white/10">
+              <div className="relative aspect-[4/3] w-full flex-1 lg:aspect-auto lg:min-h-[18rem]">
+                <Image
+                  src="/media/images/forman-summer.jpg"
+                  alt=""
+                  aria-hidden="true"
+                  fill
+                  sizes="10vw"
+                  className="scale-110 object-cover opacity-60 blur-2xl"
+                />
                 <Image
                   src="/media/images/forman-summer.jpg"
                   alt="Fabrizio Saunero at the Forman School summer program in Connecticut, USA"
                   fill
                   sizes="(max-width: 1024px) 90vw, 45vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
